@@ -1,0 +1,8 @@
+﻿@page "/stringLengthCounter"
+@inject StringLengthCounterViewModel ViewModel
+
+<h1>文字列カウンタ</h1>
+
+<input id="text1" @bind="ViewModel.Text1.Value" @bind:event="oninput"/>
+
+<p>@ViewModel.Text2.Value</p>
